@@ -1,3 +1,6 @@
-Przedmiot: Frontend-Development
-Autor: Patryk Drab 
-Nr indeksu: 180379
+# Przedmiot: 
+Frontend-Development
+## Autor: 
+Patryk Drab 
+## Nr indeksu: 
+180379
