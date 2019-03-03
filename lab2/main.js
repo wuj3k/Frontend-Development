@@ -37,10 +37,10 @@ function add(ship)
     ships.push(ship)
 }
 
-function remove(name)
+function remove(entryShip)
 {
     ships = ships.filter(function(ship){
-       return ship.name !== name;
+       return ship.name !== entryShip.name;
     });
 }
 
@@ -72,11 +72,11 @@ function read()
 add(ship1);
 add(ship2);
 add(ship3);
-// remove(ship1);
+remove(ship1);
 // ship2.name = "titanic";
 
 // update(ship2);
 
-console.log(find(ship2, 'yardNumber'))
+// console.log(find(ship2, 'yardNumber'))
 
 read();
