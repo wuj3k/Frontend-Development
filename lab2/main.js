@@ -33,7 +33,10 @@ var ships = [];
 function add(ship)
 {
     var key = getKey(ship);
-    if(key !== -1) return 'ten statek jest juz dodany';
+    if(find(ship)) {
+        console.log('ten statek jest juz dodany');
+        return;
+    }
     ships.push(ship)
 }
 
@@ -47,7 +50,10 @@ function remove(entryShip)
 function update(entryShip)
 {
     var key = getKey(entryShip);
-    if(key === -1) return 'Nie mozna zaaktualizowac tego statku, najpierw go dodaj';
+    if(!find(entryShip)) {
+        console.log('nie znalazlem takiego statku, najpierw go dodaj');
+        return;
+    };
     ships[key] = entryShip;
 }
 
@@ -58,7 +64,7 @@ function getKey(ship)
 
 function find(entryShip, byWhat = 'name')
 {
-    if (typeof entryShip.byWhat !== "undefined") return 'Nie ma takiej metody';
+    if (typeof entryShip.byWhat !== "undefined") return;
     return ships.find(function(ship){
         return ship.byWhat == entryShip.byWhat;
     });
