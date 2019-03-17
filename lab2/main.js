@@ -32,7 +32,6 @@ var ships = [];
 
 function add(ship)
 {
-    var key = getKey(ship);
     if(find(ship)) {
         console.log('ten statek jest juz dodany');
         return;
