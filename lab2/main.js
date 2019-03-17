@@ -50,7 +50,7 @@ function update(entryShip)
 {
     var key = getKey(entryShip);
     if(!findShip(entryShip)) {
-        console.log('nie znalazlem takiego statku, najpierw go dodaj');
+        add(entryShip);
         return;
     };
     ships[key] = entryShip;
