@@ -61,11 +61,15 @@ function getKey(ship)
     return ships.lastIndexOf(ship);
 }
 
-function findShip(entryShip, byWhat = 'name')
+function findShip(entryShip, byWhat = 'name', params = '')
 {
+    var searchBy = params;
     if (typeof entryShip.byWhat !== "undefined") return;
+    if(entryShip) searchBy = entryShip.byWhat;
+    if(!searchBy) return;
+    
     return ships.find(function(ship){
-        return ship.byWhat == entryShip.byWhat;
+        return ship.byWhat == searchBy;
     });
 }
 
