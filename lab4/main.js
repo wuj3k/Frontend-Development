@@ -1,32 +1,3 @@
-
-var ship1 = {
-    name: "Majestic Mærsk",
-    inService: true,
-    yardNumber: 4251,
-    imoNumber: 9619919,
-}
-
-var ship2 = {
-    name: "Mary Mærsk",
-    inService: false,
-    yardNumber: 4252,
-    imoNumber: 9619921,
-}
-
-var ship3 = {
-    name: "Marie Mærsk",
-    inService: true,
-    yardNumber: 4253,
-    imoNumber: 9619933,
-}
-
-var ship3 = {
-    name: "Madison Mærsk",
-    inService: false,
-    yardNumber: 4254,
-    imoNumber: 9619945,
-}
-
 var ShipDataBase = (function () {
     var ships = [];
 
@@ -54,25 +25,22 @@ var ShipDataBase = (function () {
     }
 
     function getKey(ship) {
-        return ships.lastIndexOf(ship);
+        return ships.indexOf(ship);
     }
 
-    function findShip(entryShip, byWhat = 'name', params = '') {
-        var searchBy = params;
-        //if (typeof entryShip.byWhat !== "undefined") return;
-        if (entryShip) searchBy = entryShip.byWhat;
-        if (!searchBy) return;
+    function findShip(entryShip) {
 
-        return ships.filter(function (ship) {
-            return ship.byWhat == searchBy;
+        return ships.find(function (ship) {
+            return ship.imoNumber == entryShip.imoNumber;
         });
     }
 
     return {
 
-        add: addShip(ship),
-        remove: removeShip(ship),
-        update: updateShip(ship),
+        add: addShip,
+        remove: removeShip,
+        update: updateShip,
+        find: findShip,
 
         read: function () {
             console.log(ships);
@@ -80,20 +48,43 @@ var ShipDataBase = (function () {
     }
 })();
 
+function Ship(name, inService, yardNumber, imoNumber) {
+    this.name = name;
+    this.inService = inService;
+    this.yardNumber = yardNumber;
+    this.imoNumber = imoNumber;
+}
 
+var ship1 = new Ship("Majestic Mærsk", true, 4251, 9619919);
+var ship2 = new Ship("Mary Mærsk", false, 4252, 9619921);
+var ship3 = new Ship("Marie Mærsk", true, 4253, 9619933);
+var ship4 = new Ship("Madison Mærsk", false, 4254, 9619945);
 
+ShipDataBase.add(ship1);
+ShipDataBase.add(ship2);
+ShipDataBase.add(ship3);
+ShipDataBase.add(ship4);
 
+Ship.prototype.getFullData = function () {
+    return "Ship name:" + this.name + " Ship register number:" + this.imoNumber;
+};
 
+function Yacht(numberOfSail, isLuxury, name, inService, yardNumber, imoNumber) {
+    Ship.call(this, name, inService, yardNumber, imoNumber);
+    this.numberOfSail = numberOfSail;
+    this.isLuxury = isLuxury;
+}
 
-add(ship1);
-add(ship2);
-add(ship3);
-remove(ship1);
-console.log(findShip(null, "yardNumber", 4252));
-// ship2.name = "titanic";
+Yacht.prototype = Object.create(Ship.prototype);
+Yacht.prototype.constructor = Yacht;
 
-// update(ship2);
+var ship5 = new Yacht(3, false, "Dar Młodzieży", true, 6512, 7821075);
+// ship5.getFullData;
+// ShipDataBase.add(ship5);
+ShipDataBase.update(ship5);
+ShipDataBase.add(ship5);
+ShipDataBase.read();
 
-// console.log(find(ship2, 'yardNumber'))
-
-//read();
+// console.log(ShipDataBase.find(ship5));
+// ShipDataBase.read();
+// console.log(ship5.getFullData());
