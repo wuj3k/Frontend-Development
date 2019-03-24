@@ -64,11 +64,11 @@ function getKey(ship)
 function findShip(entryShip, byWhat = 'name', params = '')
 {
     var searchBy = params;
-    if (typeof entryShip.byWhat !== "undefined") return;
+    //if (typeof entryShip.byWhat !== "undefined") return;
     if(entryShip) searchBy = entryShip.byWhat;
     if(!searchBy) return;
     
-    return ships.find(function(ship){
+    return ships.filter(function(ship){
         return ship.byWhat == searchBy;
     });
 }
@@ -82,10 +82,11 @@ add(ship1);
 add(ship2);
 add(ship3);
 remove(ship1);
+console.log(findShip(null, "yardNumber", 4252));
 // ship2.name = "titanic";
 
 // update(ship2);
 
 // console.log(find(ship2, 'yardNumber'))
 
-read();
+//read();
