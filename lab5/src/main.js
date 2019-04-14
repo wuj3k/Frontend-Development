@@ -1,3 +1,13 @@
+// TODO 
+// 1.wyexportowac wszystkie klasy
+// 2.dodac cargo oraz pasazerski
+// 3. zmienic update funkcje, wrzucic imonumber oraz tablice z nowymi zmiennymi
+// 4. wypitolic getkey funkcje
+// 5. dodac jakas extra, dwie trzy funkcje zawansowane na obiektach
+// 6. dodac unikalnosc imonumber
+// 7. funckej czynosci, ile kilometrow przeplynietych, funkcje rejsu.
+// 8. zmienic funkcje read na get info
+
 class Ship {
     constructor(name, inService, yardNumber, imoNumber) {
         this._name = name;
