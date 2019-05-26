@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 4000;
-
+const port = 4001;
+const cors = require('cors');
 
 class ShipDataBase {
 
@@ -103,6 +103,7 @@ class Ship {
 
 
 app.use(bodyParser.json());
+app.use(cors());
 const DataBase = new ShipDataBase()
     .addShip(new Ship("Majestic Mærsk", true, 4251, 9619919))
     .addShip(new Ship("Mary Mærsk", false, 4252, 9619921))
