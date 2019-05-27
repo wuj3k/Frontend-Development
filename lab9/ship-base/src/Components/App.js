@@ -3,7 +3,8 @@ import axios from 'axios';
 import Form from "./Form";
 import Listing from "./Listing";
 import Details from "./Details";
-import Container from '@material-ui/core';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 
 class App extends Component {
 
@@ -56,25 +57,29 @@ class App extends Component {
     render() {
         const {imoNumber, inService, name, yardNumber} = this.state;
         return (
-            <div>
-                <div>
-                    <Listing
-                        list={this.listingName()}
-                        onRowClick={this.handleRowClick}
-                    />
-                </div>
-                <div>
-                    <Form/>
-                </div>
-                <div>
-                    <Details
-                        imoNumber={parseInt(imoNumber)}
-                        inService={inService}
-                        name={name}
-                        yardNumber={parseInt(yardNumber)}
-                    />
-                </div>
-            </div>
+            <Container maxWidth="sm">
+                <Grid>
+                    <Grid>
+                        <Listing
+                            list={this.listingName()}
+                            onRowClick={this.handleRowClick}
+                        />
+                    </Grid>
+
+                    <Grid>
+                        <Form/>
+                    </Grid>
+
+                    <Grid>
+                        <Details
+                            imoNumber={parseInt(imoNumber)}
+                            inService={inService}
+                            name={name}
+                            yardNumber={parseInt(yardNumber)}
+                        />
+                    </Grid>
+                </Grid>
+            </Container>
         );
     }
 }

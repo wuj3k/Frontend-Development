@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import Paper from '@material-ui/core/Paper';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 
 class Details extends Component {
     constructor(props) {
@@ -11,15 +14,15 @@ class Details extends Component {
         const {name, inService, yardNumber, imoNumber} = this.props;
 
         return (
-            <div>
+            <Paper className={'container-form'}>
                 <h1>Dane statku</h1>
-                <ul>
-                    <li>Nazwa: {name}</li>
-                    <li>W użyciu: {inService}</li>
-                    <li>Nr stoczni: {yardNumber}</li>
-                    <li>Numer rejstracji: {imoNumber}</li>
-                </ul>
-            </div>
+                <List>
+                    <ListItem>Nazwa: {name}</ListItem>
+                    <ListItem>W użyciu: {inService}</ListItem>
+                    <ListItem>Nr stoczni: {yardNumber}</ListItem>
+                    <ListItem>Numer rejstracji: {imoNumber}</ListItem>
+                </List>
+            </Paper>
         );
     }
 }

@@ -1,5 +1,13 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+
+
 
 class Listing extends Component {
 
@@ -11,28 +19,30 @@ class Listing extends Component {
         const {onRowClick, list} = this.props;
 
         return (
-            <div>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>L.p</th>
-                        <th>Nazwa statku</th>
-                        <th>Identyfikator statku</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {list.map((ship, index) => (
-                        <tr
-                            key={ship.imoNumber}
-                            onClick={() => onRowClick(ship.imoNumber)}
-                        >
-                            <td>{index}</td>
-                            <td>{ship.name}</td>
-                            <td>{ship.imoNumber}</td>
-                        </tr>))}
-                    </tbody>
-                </table>
-            </div>
+            <Paper className={'container-form'}>
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>L.p</TableCell>
+                            <TableCell align="right">Nazwa statku</TableCell>
+                            <TableCell align="right">Identyfikator statku</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {list.map((row, index) => (
+                            <TableRow
+                                key={row.imoNumber}
+                                onClick={() => onRowClick(row.imoNumber)}
+                                className={'row'}
+                            >
+                                <TableCell align="right">{index}</TableCell>
+                                <TableCell align="right">{row.name}</TableCell>
+                                <TableCell align="right">{row.imoNumber}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </Paper>
         );
     }
 }
