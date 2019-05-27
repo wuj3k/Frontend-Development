@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="407a1705-1ea4-4d53-877d-cd727684196c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ship-base/src/Components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ship-base/src/Components/Details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ship-base/src/Components/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ship-base/src/Components/Listing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab8/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/backend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/Details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/Listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/Listing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="-528">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -42,8 +42,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="330">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +54,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="660">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,6 +91,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -110,10 +121,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="295" />
-    <option name="y" value="52" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="621" />
+    <option name="y" value="347" />
+    <option name="width" value="1390" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -121,7 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +161,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,17 +196,20 @@
       <updated>1558852114305</updated>
       <workItem from="1558852115349" duration="609000" />
       <workItem from="1558852733599" duration="3818000" />
+      <workItem from="1558858172134" duration="1088000" />
+      <workItem from="1558859370514" duration="3259000" />
+      <workItem from="1558979693779" duration="1358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4427000" />
+    <option name="totallyTimeSpent" value="10132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25306576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26477146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,20 +239,13 @@
     <entry file="file://$PROJECT_DIR$/ship-database/src/Compotents/Main.js" />
     <entry file="file://$PROJECT_DIR$/ship-base/src/App.js" />
     <entry file="file://$PROJECT_DIR$/ship-base/src/logo.svg" />
-    <entry file="file://$PROJECT_DIR$/ship-base/src/App.css">
+    <entry file="file://$PROJECT_DIR$/ship-base/node_modules/prop-types/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Details.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -249,20 +256,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ship-base/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Listing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="330">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/src/Components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="-528">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
