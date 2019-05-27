@@ -6,6 +6,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 
 
@@ -16,7 +17,7 @@ class Listing extends Component {
     }
 
     render() {
-        const {onRowClick, list} = this.props;
+        const {onRowClick, list, onRemove} = this.props;
 
         return (
             <Paper className={'container-form'}>
@@ -26,6 +27,7 @@ class Listing extends Component {
                             <TableCell>L.p</TableCell>
                             <TableCell align="right">Nazwa statku</TableCell>
                             <TableCell align="right">Identyfikator statku</TableCell>
+                            <TableCell align="right">Akcje</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -38,6 +40,13 @@ class Listing extends Component {
                                 <TableCell align="right">{index}</TableCell>
                                 <TableCell align="right">{row.name}</TableCell>
                                 <TableCell align="right">{row.imoNumber}</TableCell>
+                                <TableCell align="right"><button
+                                    onClick={(event) => {
+                                        onRemove(event, row.imoNumber)
+                                    }}
+                                >
+                                    <DeleteIcon/>
+                                </button></TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
@@ -49,6 +58,7 @@ class Listing extends Component {
 
 Listing.propTypes = {
     onRowClick: PropTypes.func.isRequired,
+    onRemove:PropTypes.func.isRequired,
     list: PropTypes.array.isRequired,
 };
 

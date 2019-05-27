@@ -8,8 +8,6 @@ import Grid from '@material-ui/core/Grid';
 
 class App extends Component {
 
-    host = 'localhost:4001/';
-
     state = {
         ships: [],
         name: '',
@@ -33,9 +31,22 @@ class App extends Component {
         });
     }
 
-    handleSubmit = async (event) => {
+    handleSubmit = async (event, shipData) => {
         event.preventDefault();
-        axios.post(this.host + 'api/ship/new', {ship: this.state.ships});
+        axios.post('http://localhost:4001/api/ship/new', {
+            name: shipData.name,
+            imoNumber: parseInt(shipData.imoNumber),
+            inService: shipData.inService,
+            yardNumber: parseInt(shipData.yardNumber)
+        });
+        this.fetchShips();
+    };
+
+    handleRemove = async (event, imoNumber) => {
+        
+        event.preventDefault();
+        axios.delete('http://localhost:4001/api/ship/' + imoNumber)
+        this.fetchShips();
     };
 
     listingName() {
@@ -63,11 +74,14 @@ class App extends Component {
                         <Listing
                             list={this.listingName()}
                             onRowClick={this.handleRowClick}
+                            onRemove={this.handleRemove}
                         />
                     </Grid>
 
                     <Grid>
-                        <Form/>
+                        <Form
+                            onSubmit={this.handleSubmit}
+                        />
                     </Grid>
 
                     <Grid>

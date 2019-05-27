@@ -11,12 +11,15 @@ class ShipDataBase {
     }
 
     addShip(ship) {
-        let searchShip = this.findShip(ship);
+        console.log(ship);
+        let searchShip = this.findShip(ship.imoNumber);
         if (searchShip) {
             searchShip.update(ship);
-            return { 'message': 'Udalo się zaktualizować dane statku' };
+            return {'message': 'Udalo się zaktualizować dane statku'};
         }
-        this.ships.push(ship)
+        let inService = false;
+        if (ship.inService) inService = true;
+        this.ships.push(new Ship(ship.name, inService, ship.yardNumber, ship.imoNumber));
         return this;
     }
 
@@ -26,14 +29,12 @@ class ShipDataBase {
         this.ships = this.ships.filter(function (ship) {
             return ship.imoNumber != search;
         });
-        return { 'message': 'Udalo się usunąć statek z bazy' }
+        return {'message': 'Udalo się usunąć statek z bazy'}
     }
 
-    findShip(entryShip) {
-        let search = entryShip;
-        if (entryShip instanceof Ship) search = entryShip.imoNumber;
+    findShip(imoNumber) {
         return this.ships.find(function (ship) {
-            return ship.imoNumber == search;
+            return ship.imoNumber == imoNumber;
         });
     }
 
@@ -68,8 +69,6 @@ class Ship {
 }
 
 
-
-
 app.use(bodyParser.json());
 app.use(cors());
 const DataBase = new ShipDataBase()
@@ -83,8 +82,8 @@ app.get('/api/list', (req, res) => res.send(DataBase.getShips())); // lista stat
 app.get('/api/ship/:imoNumber', (req, res) => res.send(DataBase.findShip(req.params.imoNumber))); // znajdowanie statków
 app.get('/api/ship/', (req, res) => res.send(DataBase.findBy(req.params.name, req.params.value))); // znajdowanie statków po parametrze
 app.delete('/api/ship/:imoNumber', (req, res) => res.send(DataBase.removeShip(req.params.imoNumber))); // usuwanie statków
-app.post('/api/ship/new', (req, res) => res.send(DataBase.addShip(req.params))); // dodawanie statków
-app.put('/api/ship/edit', (req, res) => res.send(DataBase.addShip(req.params))); // update statków
+app.post('/api/ship/new', (req, res) => res.send(DataBase.addShip(req.body))); // dodawanie statków
+app.put('/api/ship/edit', (req, res) => res.send(DataBase.addShip(req.body))); // update statków
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 

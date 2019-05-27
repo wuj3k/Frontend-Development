@@ -5,25 +5,19 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Radio from '@material-ui/core/Radio';
-import Button from '@material-ui/core/Button';
+import PropTypes from "prop-types";
 
 class Form extends Component {
 
     state = {
-        ships: [],
         name: '',
         inService: '',
         yardNumber: '',
         imoNumber: '',
     };
 
-    onSubmitForm(event) {
-        debugger;
-        event.preventDefault();
-        console.log('dupa');
-    }
-
     render() {
+        const {onSubmit} = this.props;
         return (
             <Paper className={'container-form'}>
                 <form onSubmit={this.handleSubmit}>
@@ -58,21 +52,20 @@ class Form extends Component {
                             <FormControlLabel value="0" control={<Radio/>} label="Tak"/>
                             <FormControlLabel value="1" control={<Radio/>} label="Nie"/>
                         </RadioGroup>
-                        <Button
-                            onChange={() => console.log('dupa')}
+                        <button
+                            onClick={(event) => {
+                                onSubmit(event, this.state)
+                            }}
                         >
                             Wyślij
-                        </Button>
-                        {/*<Button onSubmit={this.onSubmitForm} variant="contained" color="primary">*/}
-                        {/*Wyślij*/}
-                        {/*</Button>*/}
+                        </button>
                     </FormControl>
-
                 </form>
-
             </Paper>
         );
     }
 }
-
+Form.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+};
 export default Form;
