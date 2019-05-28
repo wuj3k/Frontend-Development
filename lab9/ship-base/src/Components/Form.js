@@ -16,9 +16,20 @@ class Form extends Component {
         imoNumber: '',
     };
 
-    render() {
-        const {onSubmit, ship} = this.props;
+    componentDidUpdate(prevProps) {
+        if (this.props.ship !== prevProps.ship) {
+            const { ship } = this.props;
+            this.setState({
+                name:ship.name,
+                inService: ship.inService === "Tak" ? 1 : 0,
+                yardNumber: ship.yardNumber,
+                imoNumber: ship.imoNumber,
+            })
+        }
+    }
 
+    render() {
+        const {onSubmit} = this.props;
 
         return (
             <Paper className={'container-form'}>
@@ -65,7 +76,13 @@ class Form extends Component {
                         </RadioGroup>
                         <button
                             onClick={(event) => {
-                                onSubmit(event, this.state)
+                                onSubmit(event, this.state);
+                                this.setState({
+                                        name:'',
+                                        inService: '',
+                                        yardNumber: '',
+                                        imoNumber: '',
+                                    })
                             }}
                         >
                             Wyślij

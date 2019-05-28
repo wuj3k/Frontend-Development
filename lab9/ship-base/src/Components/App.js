@@ -5,6 +5,7 @@ import Listing from "./Listing";
 import Details from "./Details";
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import Slide from '@material-ui/core/Slide';
 
 class App extends Component {
 
@@ -14,8 +15,13 @@ class App extends Component {
         name: '',
         imoNumber: '',
         inService: '',
-        yardNumber: ''
+        yardNumber: '',
+        checked: false,
     };
+
+    componentDidMount() {
+        this.fetchShips();
+    }
 
     async fetchShips() {
         const listing = await axios.get('http://localhost:4001/api/list');
@@ -26,22 +32,23 @@ class App extends Component {
 
     handleSubmit = async (event, shipData) => {
         event.preventDefault();
-        axios.post('http://localhost:4001/api/ship/new', {
+        await axios.post('http://localhost:4001/api/ship/new', {
             name: shipData.name,
             imoNumber: parseInt(shipData.imoNumber),
-            inService: shipData.inService,
+            inService: shipData.inService ? 'Tak' : 'Nie',
             yardNumber: parseInt(shipData.yardNumber)
         });
+        await this.fetchShips();
     };
 
     handleRemove = async (event, imoNumber) => {
-        axios.delete('http://localhost:4001/api/ship/' + imoNumber);
+        await axios.delete('http://localhost:4001/api/ship/' + imoNumber);
+        await this.fetchShips();
     };
 
-    handleEdit = async (event , imoNumber) => {
+    handleEdit = async (event, imoNumber) => {
         const ship = await axios.get('http://localhost:4001/api/ship/' + imoNumber);
         this.setState({ship: ship.data});
-        console.log(ship.data);
     };
 
     handleRowClick = async (imoNumber) => {
@@ -51,16 +58,15 @@ class App extends Component {
             imoNumber: parseInt(ship.data.imoNumber),
             inService: ship.data.inService,
             yardNumber: parseInt(ship.data.yardNumber),
+            checked: true,
         });
     };
 
     render() {
-        const {ships, imoNumber, inService, name, yardNumber, ship} = this.state;
-
-        this.fetchShips();
+        const {ships, imoNumber, inService, name, yardNumber, ship, checked} = this.state;
 
         return (
-            <Container maxWidth="lg">
+            <Container maxWidth="md">
                 <Grid>
                     <Grid>
                         <Listing
@@ -74,17 +80,19 @@ class App extends Component {
                     <Grid>
                         <Form
                             onSubmit={this.handleSubmit}
-                            ship={ship ? ship : null} // TODO
+                            ship={ship ? ship : null}
                         />
                     </Grid>
 
                     <Grid>
-                        <Details
-                            imoNumber={parseInt(imoNumber)}
-                            inService={inService}
-                            name={name}
-                            yardNumber={parseInt(yardNumber)}
-                        />
+                        <Slide direction="up" in={checked}>
+                            <Details
+                                imoNumber={parseInt(imoNumber)}
+                                inService={inService}
+                                name={name}
+                                yardNumber={parseInt(yardNumber)}
+                            />
+                        </Slide>
                     </Grid>
                 </Grid>
             </Container>
