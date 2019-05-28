@@ -10,24 +10,17 @@ class App extends Component {
 
     state = {
         ships: [],
+        ship: '',
         name: '',
         imoNumber: '',
         inService: '',
         yardNumber: ''
     };
 
-    componentDidMount() {
-        this.fetchShips();
-    }
-
     async fetchShips() {
         const listing = await axios.get('http://localhost:4001/api/list');
         this.setState({
             ships: listing.data,
-            name: listing.data[0].name,
-            imoNumber: listing.data[0].imoNumber,
-            inService: listing.data[0].inService,
-            yardNumber: listing.data[0].yardNumber,
         });
     }
 
@@ -39,21 +32,17 @@ class App extends Component {
             inService: shipData.inService,
             yardNumber: parseInt(shipData.yardNumber)
         });
-        this.fetchShips();
     };
 
     handleRemove = async (event, imoNumber) => {
-        
-        event.preventDefault();
-        axios.delete('http://localhost:4001/api/ship/' + imoNumber)
-        this.fetchShips();
+        axios.delete('http://localhost:4001/api/ship/' + imoNumber);
     };
 
-    listingName() {
-        return this.state.ships.map((ships) => {
-            return {name: ships.name, imoNumber: ships.imoNumber};
-        });
-    }
+    handleEdit = async (event , imoNumber) => {
+        const ship = await axios.get('http://localhost:4001/api/ship/' + imoNumber);
+        this.setState({ship: ship.data});
+        console.log(ship.data);
+    };
 
     handleRowClick = async (imoNumber) => {
         const ship = await axios.get('http://localhost:4001/api/ship/' + imoNumber);
@@ -66,14 +55,18 @@ class App extends Component {
     };
 
     render() {
-        const {imoNumber, inService, name, yardNumber} = this.state;
+        const {ships, imoNumber, inService, name, yardNumber, ship} = this.state;
+
+        this.fetchShips();
+
         return (
-            <Container maxWidth="sm">
+            <Container maxWidth="lg">
                 <Grid>
                     <Grid>
                         <Listing
-                            list={this.listingName()}
+                            list={ships}
                             onRowClick={this.handleRowClick}
+                            onEdit={this.handleEdit}
                             onRemove={this.handleRemove}
                         />
                     </Grid>
@@ -81,6 +74,7 @@ class App extends Component {
                     <Grid>
                         <Form
                             onSubmit={this.handleSubmit}
+                            ship={ship ? ship : null} // TODO
                         />
                     </Grid>
 

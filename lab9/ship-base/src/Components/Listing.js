@@ -7,17 +7,47 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import DeleteIcon from '@material-ui/icons/Delete';
-
+import SettingsIcon from '@material-ui/icons/Settings';
 
 
 class Listing extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
-        const {onRowClick, list, onRemove} = this.props;
+        const {onRowClick, list, onRemove,onEdit} = this.props;
+        const listing = list.map((row, index) => (
+            <TableRow className={'row'}>
+                <TableCell align="right">{index}</TableCell>
+                <TableCell align="right"
+                           key={row.imoNumber}
+                           onClick={() => onRowClick(row.imoNumber)}
+                >
+                    {row.name}
+                </TableCell>
+                <TableCell align="right">{row.imoNumber}</TableCell>
+                <TableCell align="right">
+                    <button
+                        onClick={(event) => {
+                            onEdit(event, row.imoNumber)
+                        }}
+                    >
+                        <SettingsIcon/>
+                    </button>
+                    <button
+                        onClick={(event) => {
+                            onRemove(event, row.imoNumber)
+                        }}
+                    >
+                        <DeleteIcon/>
+                    </button>
+                </TableCell>
+            </TableRow>
+        ));
+
+        const empty = (
+            <TableRow>
+                <TableCell align="right">Brak</TableCell>
+            </TableRow>
+        );
 
         return (
             <Paper className={'container-form'}>
@@ -31,24 +61,7 @@ class Listing extends Component {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {list.map((row, index) => (
-                            <TableRow
-                                key={row.imoNumber}
-                                onClick={() => onRowClick(row.imoNumber)}
-                                className={'row'}
-                            >
-                                <TableCell align="right">{index}</TableCell>
-                                <TableCell align="right">{row.name}</TableCell>
-                                <TableCell align="right">{row.imoNumber}</TableCell>
-                                <TableCell align="right"><button
-                                    onClick={(event) => {
-                                        onRemove(event, row.imoNumber)
-                                    }}
-                                >
-                                    <DeleteIcon/>
-                                </button></TableCell>
-                            </TableRow>
-                        ))}
+                        {list.length ? listing : empty}
                     </TableBody>
                 </Table>
             </Paper>
@@ -58,7 +71,8 @@ class Listing extends Component {
 
 Listing.propTypes = {
     onRowClick: PropTypes.func.isRequired,
-    onRemove:PropTypes.func.isRequired,
+    onRemove: PropTypes.func.isRequired,
+    onEdit: PropTypes.func.isRequired,
     list: PropTypes.array.isRequired,
 };
 

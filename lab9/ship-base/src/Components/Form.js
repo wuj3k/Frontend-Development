@@ -17,35 +17,46 @@ class Form extends Component {
     };
 
     render() {
-        const {onSubmit} = this.props;
+        const {onSubmit, ship} = this.props;
+
+
         return (
             <Paper className={'container-form'}>
                 <form onSubmit={this.handleSubmit}>
                     <FormControl>
                         <TextField
+                            required={true}
                             id="standard-name"
                             label="Name"
                             value={this.state.name}
                             onChange={event => this.setState({name: event.target.value})}
-                            margin="normal"
                         />
                         <TextField
+                            required={true}
                             id="imoNumber"
                             label="Identyfikator statku"
                             value={this.state.imoNumber}
-                            onChange={event => this.setState({imoNumber: event.target.value})}
+                            onChange={(event) =>{
+                                if(!parseInt(event.target.value)) return;
+                                this.setState({imoNumber: parseInt(event.target.value)})}
+                            }
                             margin="normal"
                         />
                         <TextField
+                            required={true}
                             id="imoNumber"
                             label="Numer stoczni"
                             value={this.state.yardNumber}
-                            onChange={event => this.setState({yardNumber: event.target.value})}
+                            onChange={(event) =>{
+                                if(!parseInt(event.target.value)) return;
+                                this.setState({yardNumber: parseInt(event.target.value)})}
+                            }
                             margin="normal"
                         />
                         <RadioGroup
                             aria-label="Czy w użyciu?"
                             name="inService"
+                            required={true}
                             value={this.state.inService}
                             onChange={event => this.setState({inService: event.target.value})}
                         >

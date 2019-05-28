@@ -11,7 +11,6 @@ class ShipDataBase {
     }
 
     addShip(ship) {
-        console.log(ship);
         let searchShip = this.findShip(ship.imoNumber);
         if (searchShip) {
             searchShip.update(ship);
@@ -39,12 +38,14 @@ class ShipDataBase {
     }
 
     getShips() {
-        return this.ships;
+        return this.ships.map((ships) => {
+            return {name: ships.name, imoNumber: ships.imoNumber};
+        });
     }
 
-    findBy(name, value) {
-        return this.ships.find(function (ship) {
-            return ship.name == value;
+    findBy(criteria, value) {
+        return this.ships.find(function (ship, criteria, value) {
+            return ship.criteria == value;
         });
     }
 }
