@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="407a1705-1ea4-4d53-877d-cd727684196c" name="Default Changelist" comment="" />
+    <list default="true" id="407a1705-1ea4-4d53-877d-cd727684196c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab10/state-lifting-up/src/Dollar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab10/state-lifting-up/src/Parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab10/state-lifting-up/src/Pln.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/lib/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/src/Cargo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/Cargo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/src/Ship.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/Ship.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/src/ShipDataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/ShipDataBase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/src/Yacht.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/Yacht.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/src/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/src/Message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/first-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/first-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Ship.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/Compotents/Ship.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/ship-database/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/ship-database/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/backend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/Details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/Components/Listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/Components/Listing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-base/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ship-base/yarn.lock" afterDir="false" />
+    </list>
     <ignored path="../lab8/.idea/encodings.xml" />
     <ignored path="../lab7/.idea/encodings.xml" />
     <ignored path="../lab8/.idea/misc.xml" />
@@ -35,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="632">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -47,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="198">
               <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -56,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1376">
-              <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+            <state relative-caret-position="-83">
+              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -68,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
-              <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+            <state relative-caret-position="599">
+              <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="40" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -136,6 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,7 +242,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,17 +281,18 @@
       <workItem from="1558859370514" duration="3259000" />
       <workItem from="1558979693779" duration="12431000" />
       <workItem from="1559055533274" duration="9368000" />
+      <workItem from="1559456159032" duration="2642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30573000" />
+    <option name="totallyTimeSpent" value="33215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26867336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27257526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,7 +304,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.06800446" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32924107" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
@@ -277,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship-base/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/public/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -301,19 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship-base/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Details.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/node_modules/@material-ui/core/SvgIcon/SvgIcon.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -328,20 +379,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Listing.js">
+    <entry file="file://$PROJECT_DIR$/ship-base/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="66">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Form.js">
+    <entry file="file://$PROJECT_DIR$/ship-base/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship-base/node_modules/@material-ui/core/Grid/Grid.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Listing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -350,8 +418,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ship-base/src/Components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+        <state relative-caret-position="-83">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ship-base/src/Components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="40" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
